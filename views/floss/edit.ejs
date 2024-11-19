@@ -7,6 +7,16 @@
   
 </head>
 <body>
-    <h1>You can edit your floss entry here!</h1>
+    <h1>Edit DMC Color Number: <%= floss.flossNum %> </h1>
+    <form action="/floss/<%=floss._id%>?_method=PUT" method="POST">
+        <label>Floss Number:</label>
+        <input value="<%= floss.flossNum %>" name="flossNum" type="number"/>
+        <label>Discriptive Color:</label>
+        <input value="<%= floss.flossColor %>"name="flossColor" type="text"/>
+        <label>Number of Skiens:</label>
+        <input value="<%= floss.numOfSkiens %>"name="numOfSkiens" type="number"/>
+        <button type="submit">Update Floss</button>
+    </form>
+    <a href="/index">Back to Craft Cabinet</a>
 </body>
 </html>

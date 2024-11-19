@@ -9,7 +9,7 @@
     <h1>Here is your Embroidery Floss Craft Cabinet:</h1>
     <ul>
         <% floss.forEach (floss => { %>
-            <li><a href="/floss/<%=floss._id%>"><%= floss.flossColor %></a></li>
+            <li><a href="/floss/<%=floss._id%>"><%= floss.flossNum %></a></li>
         <%})%>
     </ul>
     <a href="/floss/new">Add More Floss</a>

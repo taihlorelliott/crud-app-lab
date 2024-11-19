@@ -6,9 +6,15 @@
     <title><%= floss.flossColor %></title>
 </head>
 <body>
-    <h1><%= floss.flossColor %> floss information: </h1>
-    <h2>DMC Color Number: <%= floss.flossNum %></h2>
+    <h1>DMC Color Number: <%= floss.flossNum %></h1>
+    <h3>Discriptive Color: <%= floss.flossColor %></h3>
     <p>You have <%= floss.numOfSkiens %> skien(s) of number <%= floss.flossNum %> embroidery floss.</p>
+    <!-- add in delete button -->
+     <form action="/floss/<%= floss._id %>?_method=DELETE" method="POST">
+        <button type="submit">Delete <%= floss.flossColor%></button>
+     </form>
     <a href="/index">Back to Craft Cabinet</a>
+    <a href="/floss/<%= floss._id %>/edit">Edit <%= floss.flossNum %></a>
+
 </body>
 </html>
