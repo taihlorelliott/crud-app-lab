@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css -->
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <title><%= floss.flossColor %></title>
 </head>
-<body>
+<body id="showbody">
     <h1>DMC Color Number: <%= floss.flossNum %></h1>
     <h3>Discriptive Color: <%= floss.flossColor %></h3>
     <p>You have <%= floss.numOfSkiens %> skien(s) of number <%= floss.flossNum %> embroidery floss.</p>
@@ -13,8 +15,14 @@
      <form action="/floss/<%= floss._id %>?_method=DELETE" method="POST">
         <button type="submit">Delete <%= floss.flossColor%></button>
      </form>
-    <a href="/index">Back to Craft Cabinet</a>
-    <a href="/floss/<%= floss._id %>/edit">Edit <%= floss.flossNum %></a>
+     <form action="/index">
+        <button type="submit">Back to Craft Cabinet</button>
+    </form>
+    <form action="/floss/<%= floss._id %>/edit">
+        <button type="submit">Edit</button>
+    </form>
+    <!-- <a href="/index">Back to Craft Cabinet</a>
+    
 
 </body>
 </html>

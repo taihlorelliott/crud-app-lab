@@ -10,6 +10,8 @@ const mongoose = require('mongoose')
 const methodOverride = require("method-override");
 // require the morgan package to work
 const morgan = require('morgan');
+//for css connection
+const path = require("path");
 
 const app = express();
 
@@ -30,6 +32,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
 //helps with finding bugs sometimes, not 100% necessary
 app.use(morgan("dev"));
+
+//link css
+app.use(express.static(path.join(__dirname, "public")));
 
 //=============== gets =====================
 //home page

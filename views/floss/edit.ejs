@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- link css -->
+  <link rel="stylesheet" href="/stylesheets/style.css" />
     <title>Edit </title>
   
 </head>
-<body>
+<body id="editbody">
     <h1>Edit DMC Color Number: <%= floss.flossNum %> </h1>
     <form action="/floss/<%=floss._id%>?_method=PUT" method="POST">
         <label>Floss Number:</label>
@@ -17,6 +19,13 @@
         <input value="<%= floss.numOfSkiens %>"name="numOfSkiens" type="number"/>
         <button type="submit">Update Floss</button>
     </form>
-    <a href="/index">Back to Craft Cabinet</a>
+    <form action="/index">
+        <button type="submit">Back to Craft Cabinet</button>
+    </form>
+    <form action="/">
+        <button type="submit">Home</button>
+    </form>
+    <!-- <a href="/index">Back to Craft Cabinet</a>
+    <a href="/">Home</a> -->
 </body>
 </html>

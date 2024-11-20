@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+
+#homebody {
+    background-color: rgb(255, 215, 221);
+  
+}
+
+#showbody, #newbody, #indexbody, #editbody {
+    background-image: url("https://i.postimg.cc/BZLgP7yf/images.jpg") 
+}
+
+#homeimg {
+  float: left;
+}
+
+#h1home {
+    position: absolute;
+    z-index: 2;
+    padding: 200px;
+    
+}
+
+
+#phome {
+  /* position: absolute;
+  z-index: 2;
+  margin: 35px;
+  padding: 300px;   */
+  color: darkred;
+  font-family: "Doto";
+  font-weight: 900;
+  text-align: center;
+}
+
+h1 {
+  color: darkblue;  
+  font-family: "Doto";
+  text-align: center;
+}
+
+
+
+a {
+  font-family: "Doto";
+  font-weight: 900;
+  text-decoration: none;
+  color: darkgreen
+  text-align: center;
+  
+}
+
+a:hover {
+  cursor: pointer;
+  color: darkred;
+}
+
+label {
+  font-family: "Doto";
+  font-weight: 900;
+}
+
+#ahome {
+  position: absolute;
+  z-index: 2;
+  margin: 35px;
+  padding: 50px; 
+}
+
+#flosslist {
+  text-decoration: none;
+  color: black;
+}
+
+#flosslist:hover {
+  cursor: pointer;
+  color: darkred;
+}
+
+button:hover {
+  cursor: pointer;
+  color: darkred;
+}
+
+button, input {
+  font-family: "Doto";
+  font-weight: 900;
+}
+
+ul {
+  list-style-type: "🧵";
+  margin: 20px;
+}

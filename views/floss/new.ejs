@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css -->
+    <link rel="stylesheet" href="/stylesheets/style.css" />
     <title>Add Floss</title>
 </head>
-<body>
+<body id="newbody">
     <h1>Add Embroidery Floss to your craft cabinet!</h1>
     <form action="/floss" method="POST">
         <label>Floss Number:</label>
@@ -16,6 +18,13 @@
         <input name="numOfSkiens" type="number"/>
         <button type="submit">Add Floss</button>
     </form>
-    <a href="/index">Back to Craft Cabinet</a>
+    <form action="/index">
+        <button type="submit">Back to Craft Cabinet</button>
+    </form>
+    <form action="/">
+        <button type="submit">Home</button>
+    </form>
+    <!-- <a href="/index">Back to Craft Cabinet</a>
+    <a href="/">Home</a> -->
 </body>
 </html>
